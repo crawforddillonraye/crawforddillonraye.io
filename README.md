@@ -16,7 +16,8 @@ next create a directory for wordpress and then make that your pwd with
 make a yml file with docker compose such as with nano with the following command
 `nano  docker-compose.yml`
 then paste the following intot he file
-```version: "3" 
+```
+version: "3" 
 # Defines which compose version to use
 services:
   # Services line define which Docker images to run. In this case, it will be MySQL server and WordPress image.
@@ -49,6 +50,7 @@ services:
       ["./:/var/www/html"]
 volumes:
   mysql: {}
+  
 ```
 # IMPORTANT this is a template, replace the usernames and passwords with corresponding info
 next run the container with the following command
